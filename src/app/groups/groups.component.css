@@ -1,0 +1,65 @@
+.HeaderSection {
+    display: flex;
+    padding: 16px 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    align-self: stretch;
+    border-radius: 6px;
+    background: #F4EBFF;
+}
+
+.Container {
+    align-self: stretch;
+    height: 38px;
+    display: flex;
+}
+
+.PageHeader {
+    align-self: stretch;
+    height: 38px;
+    display: flex;
+}
+
+.Content {
+    display: inline-flex;
+}
+
+.Text {
+    flex: 1 1 0;
+    color: #161515;
+    font-size: 24px;
+    font-family: Inter;
+    font-weight: 500;
+    line-height: 38px;
+    word-wrap: break-word;
+}
+
+/* group form css starts */
+
+.user-details-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    align-self: stretch;
+}
+
+.heading{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    align-self: stretch;
+}
+
+
+
+.container-form{
+    border: 2px solid #007bff; /* You can change #007bff to the color you want */
+    padding: 20px; /* Adjust padding as needed */
+}
+
+  
+  
+/* group form css ends*/
