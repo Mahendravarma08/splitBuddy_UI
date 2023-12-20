@@ -36,39 +36,28 @@
 }
 
 /* group form css starts */
-
-
-.form-group {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 15px;
-  text-align: left;
-  width: 100%;
+.col-25 {
+  width: 25%;
+  float: left;
+  margin-top: 6px;
+}
+/* This command sets the width of `<div> containing the col-75 class to a fraction of the total width of the row <div> */
+.col-75 {
+  width: 75%;
+  float: left;
+  margin-top: 6px;
 }
 
-.form-group label {
-  flex: 0 0 auto;
-  margin-right: 10px;
+This command sets the width of the tag you working with
+input[type = text] {
+  width : 100%;
 }
 
-.form-group input {
-  flex: 1;
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-
-.form-container {
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* align-items: center; */
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  /* text-align: center;  */
+/* This part ensures the text after each form element stays in place after the float command. */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 /* group form css ends*/
