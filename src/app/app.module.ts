@@ -7,6 +7,9 @@ import { SharedSidebarComponent } from './shared-sidebar/shared-sidebar.componen
 import { RouterModule } from '@angular/router';
 import { appRoutes } from './app.routes';
 import { GroupsComponent } from './groups/groups.component';
+import { CalendarModule } from 'primeng/calendar';
+import { FormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -17,6 +20,9 @@ import { GroupsComponent } from './groups/groups.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    CalendarModule,
+    FormsModule,
+    BrowserAnimationsModule,
     RouterModule.forRoot(appRoutes)
   ],
   providers: [],

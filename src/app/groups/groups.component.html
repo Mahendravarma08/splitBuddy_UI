@@ -40,28 +40,48 @@
           </label>
         </div>
         <div class="col-9">
-          <input type="text" id="name" name="name" placeholder="your name" required>
+          <input type="text" id="name" name="name" placeholder="Group Title" required>
         </div>
       </div>
       <div class="row">
-        <div class="col-3">
-          <label for="name" id="name-label">
+        <div class="col-3 d-flex align-items-center">
+          <!-- Small icon with specified CSS properties -->
+          <div class="small-icon">
+            <!-- Your icon content goes here -->
+            <i class="bi bi-calendar"></i>
+          </div>
+          <label for="group-title" id="group-title-label">
             Select Date
           </label>
         </div>
         <div class="col-9">
-          <input type="text" id="name" name="name" placeholder="your name" required>
+          <p-calendar [(ngModel)]="selectedDate" [showIcon]="true"></p-calendar>
         </div>
       </div>
-      <div class="row">
-        <div class="col-3">
+      <div class="ocassion-row">
+        <!-- <div class="col-3">
           <label for="name" id="name-label">
             Ocassion
           </label>
         </div>
         <div class="col-9">
-          <input type="text" id="name" name="name" placeholder="your name" required>
+          <input type="text" id="name" name="name" placeholder="Ocassion" required>
+        </div> -->
+        <div class="col-3">
+          <label for="ocassion-heading" id="name-label">
+            Ocassion
+          </label>
         </div>
+        <div class="col-9">
+          <div class="container">
+            <!-- Input with its own styling -->
+            <input type="text" id="name" name="name" class="styled-input" placeholder="Input Text" required>
+        
+            <!-- Textarea with its own styling -->
+            <textarea id="message" name="message" class="styled-textarea" placeholder="Textarea Text" required></textarea>
+        </div>
+        </div>
+
       </div>
     </div>
 </div>

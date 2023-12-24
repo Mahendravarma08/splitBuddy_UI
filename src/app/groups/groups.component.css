@@ -137,6 +137,49 @@ flex-shrink: 0;
     border-radius: 19px;
     background: #F4EBFF;
   }
+
+.ocassion-row{
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+  align-self: stretch;
+}
+
+#ocassion-heading{
+  color: var(--Gray-700, #344054);
+
+/* Text sm/Medium */
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 20px; /* 142.857% */
+align-self: stretch;
+}
+
+/* Style for the input */
+.styled-input {
+  display: flex;
+  padding: 10px 14px;
+  align-items: center;
+  gap: 8px;
+  flex: 1 0 0;
+  align-self: stretch;
+  border-radius: 8px;
+border: 1px solid var(--Gray-300, #D0D5DD);
+background: var(--White, #FFF);
+
+/* Shadow/xs */
+box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+
+/* Style for the textarea */
+.styled-textarea {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+}
 /*  */
 
 /* group form css ends*/
