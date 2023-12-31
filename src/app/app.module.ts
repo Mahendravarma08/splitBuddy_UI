@@ -10,12 +10,14 @@ import { GroupsComponent } from './groups/groups.component';
 import { CalendarModule } from 'primeng/calendar';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CreateGroupComponent } from './create-group/create-group.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SharedSidebarComponent,
     GroupsComponent,
+    CreateGroupComponent,
   ],
   imports: [
     BrowserModule,

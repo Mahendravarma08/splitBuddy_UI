@@ -1,80 +1,51 @@
-<div class="container-group">
-    <div class="HeaderSection">
-        <div class="Container">
-            <div class="PageHeader">
-                <div class="Content">
-                    <div class="Text">Create Group</div>
+<div class="outer-container">
+    <div class="container">
+        <div class="box">
+            <div class="innerbox" (click)="onBoxClicked('create')">
+                <div class="icon">
+                    <div class="inner-icon">
+                        <span class="bi bi-plus"></span>
+                    </div>
+                </div>
+                <div class="textbox">
+                    <span class="icon-text">Create Group</span>
+                    <div class="text-below">
+                        Create your Group
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <br><br>
-
-    <div class="container">
-      <div class="row">
-        <div class="col-3">
-          <label for="name" id="name-label">
-            Add Group Photo
-          </label>
-        </div>
-        <div class="col-9">
-          <div class="d-flex align-items-center">
-              <div class="outer-circle">
-                <i class="fas fa-plus plus-icon"></i>
-                <div class="square-box">
-                  <i class="bi bi-person-add person-icon"></i>
+        </div>        
+        <div class="gap"></div>
+        <div class="box" (click)="onBoxClicked('join')">
+            <div class="innerbox">
+                <div class="icon">
+                    <div class="inner-icon">
+                        <span class="bi bi-people-fill"></span>
+                    </div>
                 </div>
-              </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-3 d-flex align-items-center">
-          <!-- Small icon with specified CSS properties -->
-          <div class="small-icon">
-            <!-- Your icon content goes here -->
-            <i class="bi bi-journals"></i>
-          </div>
-          <label for="group-title" id="group-title-label">
-            Group Title
-          </label>
-        </div>
-        <div class="col-9">
-          <input type="text" id="name" name="name" placeholder="Group Title" required>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-3 d-flex align-items-center">
-          <!-- Small icon with specified CSS properties -->
-          <div class="small-icon">
-            <!-- Your icon content goes here -->
-            <i class="bi bi-calendar"></i>
-          </div>
-          <label for="group-title" id="group-title-label">
-            Select Date
-          </label>
-        </div>
-        <div class="col-9">
-          <p-calendar [(ngModel)]="selectedDate" [showIcon]="true" placeholder="select Date" class="input"></p-calendar>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-3 d-flex align-items-center">
-          <!-- Small icon with specified CSS properties -->
-          <div class="small-icon">
-            <!-- Your icon content goes here -->
-            <i class="bi bi-journals"></i>
-          </div>
-          <label for="group-title" id="group-title-label">
-            Ocassion
-          </label>
-        </div>
-        <div class="col-9">
-          <!-- <input type="text" id="name" name="name" placeholder="Ocassion" rows="10" autocomplete="off" required> -->
-          <textarea name="" id="textarea" cols="40" rows="5"></textarea>
-        </div>
-      </div>
+                <div class="textbox">
+                    <span class="icon-text">Join Group</span>
+                    <div class="text-below">
+                        Join a Group 
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <div class="gap"></div>
+        <div class="box" (click)="onBoxClicked('viewgroups')">
+            <div class="innerbox">
+                <div class="icon">
+                    <div class="inner-icon">
+                        <span class="bi bi-view-list"></span>
+                    </div>
+                </div>
+                <div class="textbox">
+                    <span class="icon-text">My Groups</span>
+                    <div class="text-below">
+                        View groups you have joined 
+                    </div>
+                </div>
+            </div>
+        </div> 
     </div>
 </div>
-  
-

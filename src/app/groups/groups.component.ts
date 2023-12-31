@@ -1,9 +1,20 @@
 import { Component } from '@angular/core';
-import { CalendarModule } from 'primeng/calendar'; @Component({
+import { Router } from '@angular/router';
+
+ @Component({
   selector: 'app-groups',
   templateUrl: './groups.component.html',
   styleUrls: ['./groups.component.css']
 })
-export class GroupsComponent {
-  selectedDate: any = null
+export class GroupsComponent{
+
+  constructor(private router:Router){}
+  
+
+  onBoxClicked(boxType:string){
+    console.log(boxType,"boxTypee");
+
+    if(boxType === 'create')
+      this.router.navigate(['create'])
+  }
 }

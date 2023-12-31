@@ -1,0 +1,183 @@
+.HeaderSection {
+    display: flex;
+    padding: 16px 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    align-self: stretch;
+    border-radius: 6px;
+    background: #F4EBFF;
+}
+
+.Container {
+    align-self: stretch;
+    height: 38px;
+    display: flex;
+}
+
+.PageHeader {
+    align-self: stretch;
+    height: 38px;
+    display: flex;
+}
+
+.Content {
+    display: inline-flex;
+}
+
+.Text {
+    flex: 1 1 0;
+    color: #161515;
+    font-size: 24px;
+    font-family: Inter;
+    font-weight: 500;
+    line-height: 38px;
+    word-wrap: break-word;
+}
+
+/* group form css starts */
+.col-25 {
+  width: 25%;
+  float: left;
+  margin-top: 6px;
+}
+/* This command sets the width of `<div> containing the col-75 class to a fraction of the total width of the row <div> */
+.col-75 {
+  width: 75%;
+  float: left;
+  margin-top: 6px;
+}
+
+.row {
+  margin-bottom: 20px; /* Adjust the space between rows */
+}
+
+input,textarea {
+  width: 50%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 8px; /* Adjust the border-radius for curved corners */
+  box-sizing: border-box;
+}
+
+.box{
+  border-radius: 200px;
+  border: 4px solid var(--White, #FFF);
+  background: var(--Brand-50, #F9F5FF);
+
+  /* Shadow/lg */
+  box-shadow: 0px 4px 6px -2px rgba(16, 24, 40, 0.03), 0px 12px 16px -4px rgba(16, 24, 40, 0.08);
+  width: 80px;
+  height: 80px;
+}
+
+.square-box{
+  width: 20px;
+height: 20px;
+flex-shrink: 0;
+}
+
+/*  */
+   /* Styling for the outer circle */
+   .outer-circle {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    /* background-color: #3498db; */
+    /* border-radius: 50%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 200px;
+    border: 4px solid var(--White, #FFF);
+    background: var(--Brand-50, #F9F5FF);
+
+/* Shadow/lg */
+box-shadow: 0px 4px 6px -2px rgba(16, 24, 40, 0.03), 0px 12px 16px -4px rgba(16, 24, 40, 0.08);
+  }
+
+  /* Styling for the plus icon */
+  .plus-icon {
+    font-size: 20px;
+    position: absolute;
+  }
+
+  /* Styling for the square box */
+  .square-box {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+  }
+
+  /* Styling for the person icon */
+  .person-icon {
+    font-size: 32px;
+    color: #7F56D9;
+  }
+
+  .small-icon {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 19px;
+    background: #F4EBFF;
+  }
+/* group form css ends*/
+
+/* Styling for submit and cancel button start*/
+.button-row {
+  text-align: right;
+  margin-top: 20px; /* Adjust margin as needed */
+}
+
+.submit-btn {
+  padding: 8px 16px;
+  margin-left: 8px;
+  /* Additional styling */
+  background-color: #7F56D9;
+  /* border: 1px solid #ccc; */
+  border-radius: 8px;
+  cursor: pointer;
+  /* display: flex; */
+  align-items: flex-end ;
+}
+.cancel-btn{
+  padding: 8px 16px;
+  margin-left: 8px;
+  /* Additional styling */
+  background-color: #FFFFFF;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  /* display: flex; */
+  align-items: flex-end ;
+}
+
+/* Optional hover effect */
+.cancel-btn:hover,
+.submit-btn:hover {
+  background-color: #e0e0e0;
+}
+
+.site-footer {
+  text-align: right;
+  margin-top: 20px; /* Adjust margin as needed */
+  position: relative;
+  padding-top: 10px; /* Add space above the line */
+}
+
+.line {
+  position: absolute;
+  top: 0;
+  width: calc(100% - 16px); /* Adjust width - considering margins */
+  border-top: 1px solid #ccc;
+}
+
+
+/* Styling for submit and cancel button end*/
