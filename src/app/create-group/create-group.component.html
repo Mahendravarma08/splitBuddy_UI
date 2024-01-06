@@ -11,6 +11,9 @@
     <br><br>
 
     <div class="container">
+      <form [formGroup]="groupForm">
+
+
       <div class="row">
         <div class="col-3">
           <label for="name" id="name-label">
@@ -40,7 +43,7 @@
           </label>
         </div>
         <div class="col-9">
-          <input type="text" id="name" name="name" placeholder="Group Title" required>
+          <input type="text" id="name" formControlName="title" name="name" placeholder="Group Title" required autocomplete="off">
         </div>
       </div>
       <div class="row">
@@ -55,7 +58,7 @@
           </label>
         </div>
         <div class="col-9">
-          <p-calendar [(ngModel)]="selectedDate" [showIcon]="true" placeholder="select Date" class="input"></p-calendar>
+          <p-calendar [(ngModel)]="selectedDate" formControlName="date" [showIcon]="true" placeholder="select Date" class="input" dateformat="dd M,yy"></p-calendar>
         </div>
       </div>
       <div class="row">
@@ -71,16 +74,17 @@
         </div>
         <div class="col-9">
           <!-- <input type="text" id="name" name="name" placeholder="Ocassion" rows="10" autocomplete="off" required> -->
-          <textarea name="" id="textarea" cols="40" rows="5"></textarea>
+          <textarea name="" id="textarea" formControlName="ocassion" cols="40" rows="5" autocomplete="off"></textarea>
         </div>
       </div>
       <footer class="site-footer">
         <hr class="line">
         <div class="button-row">
           <button class="cancel-btn" (click)="goback()">Cancel</button>
-          <button class="submit-btn">Submit</button>
+          <button class="submit-btn" (click)="submitForm()">Submit</button>
         </div>
       </footer>
+    </form>
     </div>
 </div>
   

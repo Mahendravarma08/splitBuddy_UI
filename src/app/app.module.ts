@@ -8,7 +8,7 @@ import { RouterModule } from '@angular/router';
 import { appRoutes } from './app.routes';
 import { GroupsComponent } from './groups/groups.component';
 import { CalendarModule } from 'primeng/calendar';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CreateGroupComponent } from './create-group/create-group.component';
 
@@ -24,6 +24,7 @@ import { CreateGroupComponent } from './create-group/create-group.component';
     AppRoutingModule,
     CalendarModule,
     FormsModule,
+    ReactiveFormsModule,
     BrowserAnimationsModule,
     RouterModule.forRoot(appRoutes)
   ],
