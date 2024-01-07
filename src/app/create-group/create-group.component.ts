@@ -2,7 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormControlDirective, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { CalendarModule } from 'primeng/calendar';
-import * as axios from 'axios'
+import axios from 'axios'
+import * as moment from 'moment';
 @Component({
   selector: 'app-create-group',
   templateUrl: './create-group.component.html',
@@ -35,12 +36,22 @@ export class CreateGroupComponent implements OnInit{
 
   submitForm(){
     console.log(this.groupForm)
-    // const body = {
-    //   title:this.groupForm.value.title
-    //   date:
-    // }
-    // axios.post('http://192.168.1.10:3000')
+    const body = {
+      title:this.groupForm.value.title,
+      date:  moment(this.groupForm.value.date),
+      ocassion:this.groupForm.value.ocassion
+    }
+    const response = axios.post('http://192.168.1.10:3000/login-auth/createGroup',body);
+    console.log(response)
 
+  }
+
+  confirmAction(): void {
+    // Implement your confirmation action logic here
+    console.log('Confirmed!');
+    // this.submitForm()
+    // Close the modal if needed
+    document.getElementById('confirmationModal')?.classList.remove('show');
   }
 
 }
