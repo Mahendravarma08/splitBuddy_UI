@@ -11,6 +11,9 @@
     <br><br>
 
     <div class="container">
+      <form [formGroup]="groupForm">
+
+
       <div class="row">
         <div class="col-3">
           <label for="name" id="name-label">
@@ -40,7 +43,7 @@
           </label>
         </div>
         <div class="col-9">
-          <input type="text" id="name" name="name" placeholder="Group Title" required>
+          <input type="text" id="name" formControlName="title" name="name" placeholder="Group Title" required autocomplete="off">
         </div>
       </div>
       <div class="row">
@@ -55,7 +58,11 @@
           </label>
         </div>
         <div class="col-9">
+<<<<<<< HEAD
           <p-calendar [(ngModel)]="selectedDate" [showIcon]="true" placeholder="select Date" class="input" dateFormat="dd M, yy"></p-calendar>
+=======
+          <p-calendar [(ngModel)]="selectedDate" formControlName="date" [showIcon]="true" placeholder="select Date" class="input" dateformat="dd M,yy"></p-calendar>
+>>>>>>> 027ff85286ea7e5255aaa6211304a9e68a269b46
         </div>
       </div>
       <div class="row">
@@ -71,17 +78,40 @@
         </div>
         <div class="col-9">
           <!-- <input type="text" id="name" name="name" placeholder="Ocassion" rows="10" autocomplete="off" required> -->
-          <textarea name="" id="textarea" cols="40" rows="5"></textarea>
+          <textarea name="" id="textarea" formControlName="ocassion" cols="40" rows="5" autocomplete="off"></textarea>
         </div>
       </div>
       <footer class="site-footer">
         <hr class="line">
         <div class="button-row">
           <button class="cancel-btn" (click)="goback()">Cancel</button>
-          <button class="submit-btn" data-toggle="modal" data-toggle="modal" data-target="confirmModal">Submit</button>
+          <button class="submit-btn" (click)="submitForm()">Submit</button>
         </div>
       </footer>
+    </form>
     </div>
 </div>
+
+<!-- // TODO confirmation model
+<div class="modal fade" id="confirmationModal" tabindex="-1" role="dialog" aria-labelledby="confirmationModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="confirmationModalLabel">Confirmation</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Are you sure you want to perform this action?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary" (click)="confirmAction()">Confirm</button>
+      </div>
+    </div>
+  </div>
+</div> -->
+
   
 
