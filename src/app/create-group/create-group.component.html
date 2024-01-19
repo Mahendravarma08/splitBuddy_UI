@@ -55,7 +55,7 @@
           </label>
         </div>
         <div class="col-9">
-          <p-calendar [(ngModel)]="selectedDate" [showIcon]="true" placeholder="select Date" class="input"></p-calendar>
+          <p-calendar [(ngModel)]="selectedDate" [showIcon]="true" placeholder="select Date" class="input" dateFormat="dd M, yy"></p-calendar>
         </div>
       </div>
       <div class="row">
@@ -78,7 +78,7 @@
         <hr class="line">
         <div class="button-row">
           <button class="cancel-btn" (click)="goback()">Cancel</button>
-          <button class="submit-btn">Submit</button>
+          <button class="submit-btn" data-toggle="modal" data-toggle="modal" data-target="confirmModal">Submit</button>
         </div>
       </footer>
     </div>

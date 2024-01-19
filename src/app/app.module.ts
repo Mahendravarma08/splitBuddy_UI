@@ -11,6 +11,7 @@ import { CalendarModule } from 'primeng/calendar';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CreateGroupComponent } from './create-group/create-group.component';
+import { JoinGroupComponent } from './join-group/join-group.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { CreateGroupComponent } from './create-group/create-group.component';
     SharedSidebarComponent,
     GroupsComponent,
     CreateGroupComponent,
+    JoinGroupComponent,
   ],
   imports: [
     BrowserModule,

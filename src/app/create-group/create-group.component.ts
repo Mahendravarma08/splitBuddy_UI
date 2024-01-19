@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { CalendarModule } from 'primeng/calendar';
+declare var $: any;
 
 @Component({
   selector: 'app-create-group',
@@ -8,10 +9,10 @@ import { CalendarModule } from 'primeng/calendar';
   styleUrls: ['./create-group.component.css']
 })
 export class CreateGroupComponent {
-  constructor(private router:Router){}
+  constructor(private router: Router) { }
   selectedDate: any = null
 
-  goback(){
+  goback() {
     this.router.navigate(['groups'])
   }
 
